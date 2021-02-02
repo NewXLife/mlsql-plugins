@@ -3,7 +3,6 @@ package tech.mlsql.plugins.bigdl
 import com.intel.analytics.bigdl.nn.ClassNLLCriterion
 import com.intel.analytics.bigdl.tensor.Tensor
 import com.intel.analytics.bigdl.tensor.TensorNumericMath.TensorNumeric
-import streaming.dsl.mmlib.algs.bigdl.ClassWeightParamExtractor
 
 
 object WowClassNLLCriterion {

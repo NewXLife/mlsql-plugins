@@ -37,7 +37,6 @@ import org.apache.spark.sql.{DataFrame, SparkSession}
 import streaming.dsl.ScriptSQLExec
 import streaming.dsl.mmlib._
 import streaming.dsl.mmlib.algs.{MllibFunctions, SQLPythonFunc}
-import streaming.dsl.mmlib.algs.bigdl._
 import streaming.dsl.mmlib.algs.classfication.BaseClassification
 import streaming.dsl.mmlib.algs.param.BaseParams
 import tech.mlsql.common.utils.hdfs.HDFSOperator

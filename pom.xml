@@ -71,9 +71,9 @@
         <serviceframework.version>2.0.5</serviceframework.version>
         <scope>provided</scope>
         <hadoop-client-version>2.6.5</hadoop-client-version>
-        <mlsql.version>1.6.0-SNAPSHOT</mlsql.version>
+        <mlsql.version>2.1.0-SNAPSHOT</mlsql.version>
         <delta-plus.version>0.2.0</delta-plus.version>
-        <bigdl.version>0.8.0</bigdl.version>
+        <bigdl.version>0.12.1</bigdl.version>
     </properties>
 
     <dependencies>
