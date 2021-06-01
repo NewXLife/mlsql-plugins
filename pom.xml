@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>tech.mlsql</groupId>
-    <artifactId>mlsql-plugins_2.11</artifactId>
+    <artifactId>mlsql-plugins-2.4_2.11</artifactId>
     <packaging>pom</packaging>
     <version>0.1.0-SNAPSHOT</version>
     <modules>
@@ -22,6 +22,7 @@
         <module>mlsql-bigdl</module>
         <module>mlsql-excel</module>
         <module>mlsql-analysis-toolkit</module>
+        <module>mlsql-mllib</module>
     </modules>
     <name>MLSQL Plugins</name>
     <url>https://github.com/allwefantasy/mlsql-plugins.git</url>
@@ -57,9 +58,9 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
         <scala.version>2.11.12</scala.version>
         <scala.binary.version>2.11</scala.binary.version>
-
         <spark.version>2.4.3</spark.version>
         <spark.bigversion>2.4</spark.bigversion>
         <spark.binary.version>2.4</spark.binary.version>
@@ -141,13 +142,19 @@
 
         <profile>
             <id>allow-snapshots</id>
-            <activation><activeByDefault>true</activeByDefault></activation>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
             <repositories>
                 <repository>
                     <id>snapshots-repo</id>
                     <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-                    <releases><enabled>false</enabled></releases>
-                    <snapshots><enabled>true</enabled></snapshots>
+                    <releases>
+                        <enabled>false</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>true</enabled>
+                    </snapshots>
                 </repository>
             </repositories>
         </profile>
